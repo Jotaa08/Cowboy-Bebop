@@ -1,0 +1,221 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000000;
+    color: #FFFFFF;
+    line-height: 1.6;
+    padding-top: 100px;
+}
+
+header {
+    background-color: #FF0000;
+    color: #FFF;
+    padding: 20px 0;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.5em;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #FFF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #FFCC00;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    max-height: 600px;
+    object-fit: cover;
+}
+
+.introducao {
+    padding: 40px;
+    background: #1C1C1C;
+    text-align: center;
+}
+
+.introducao h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.introducao p {
+    font-size: 1.2em;
+    max-width: 800px;
+    margin: auto;
+}
+
+.personagens,
+.episodios {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+}
+
+.personagem,
+.episodio {
+    margin: 20px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.personagem:hover,
+.episodio:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.5);
+}
+
+.personagem img,
+.episodio img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.personagem h3,
+.episodio h3 {
+    margin: 15px 0 10px;
+    color: #FFCC00;
+}
+
+.personagem p,
+.episodio p {
+    font-size: 1em;
+}
+
+.contato {
+    padding: 40px;
+    background: #1C1C1C;
+    text-align: center;
+}
+
+.contato form {
+    max-width: 600px;
+    margin: auto;
+}
+
+.contato label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #FFF;
+    font-size: 1em;
+}
+
+.contato button {
+    padding: 10px 20px;
+    background: #FF0000;
+    color: #FFF;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contato button:hover {
+    background: #E91E63;
+}
+
+#mensagem-sucesso {
+    color: #4CAF50;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+#toggle-theme {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px;
+    background: #FFCC00;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s;
+    visibility: visible;
+    opacity: 0.8;
+}
+
+#toggle-theme:hover {
+    background: #FF9900;
+    opacity: 1;
+}
+
+body.dark-mode {
+    background-color: #EFEFEF;
+    color: #0D0D0D;
+}
+
+body.dark-mode header {
+    background-color: #FAFAFA;
+    color: #0D0D0D;
+}
+
+body.dark-mode nav ul li a {
+    color: #0D0D0D;
+}
+
+body.dark-mode nav ul li a:hover {
+    color: #E91E63;
+}
+
+body.dark-mode .introducao,
+body.dark-mode .contato {
+    background: #F5F5F5;
+}
+
+body.dark-mode .personagem,
+body.dark-mode .episodio {
+    background-color: #FFF;
+    color: #0D0D0D;
+}
+
+body.dark-mode .contato input,
+body.dark-mode .contato textarea {
+    background: #FFF;
+    color: #0D0D0D;
+}
